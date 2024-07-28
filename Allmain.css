@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.section01 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    margin: 28px 28px;
+}
+
+main h3 {
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+main p {
+    color: #fff;
+    opacity: 85%;
+    font-size: 16px;
+}
+
+.calendar {
+    width: 15%;
+    height: 64px;
+    background-color: #141a29;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.calendar p {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 3.5px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.calendar span {
+    font-size: 18.7px;
+}
