@@ -8,7 +8,9 @@
 }
 
 main {
-    margin: 28px 28px;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 28px 40px;
 }
 
 main h3 {
@@ -45,4 +47,126 @@ main p {
 
 .calendar span {
     font-size: 18.7px;
+}
+
+#section-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card-single {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 79px;
+    padding: 0 7.5%;
+    margin-top: 1%;
+    margin-left: 1.5%;
+    background-color: #141a29;
+    border-radius: 12px;
+    gap: 5.5px;
+}
+
+.card-single-taxa {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 79px;
+    padding: 0 7.8%;
+    margin-top: 1%;
+    margin-left: 1.4%;
+    background-color: #141a29;
+    border-radius: 12px;
+    gap: 5.5px;
+}
+
+.info-card h4 {
+    font-size: 20pt;
+    color: #fff;
+}
+
+.info-card p {
+    font-size: 10pt;
+    line-height: 1rem;
+    opacity: 85%;
+}
+
+.circle-span {
+    height: 42px;
+    width: 42px;
+    background-color: #2c2c2c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+
+}
+
+.circle-span span {
+    font-size: 15pt;
+    color: aqua;
+}
+
+.info-number p {
+    font-size: 8.6pt;
+    color: rgb(0, 212, 0);
+}
+
+.info-number span {
+    font-size: 8.5pt;
+}
+
+.info-number {
+    height: 12pt;
+    width: 45px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 164, 0);
+    border: 1px solid rgb(0, 212, 0);
+    background-color: rgb(9, 59, 17);
+}
+
+.info-number-fall span {
+    font-size: 8.5pt;
+}
+
+.info-number-fall p {
+    font-size: 8.6pt;
+    color: rgb(212, 0, 0);
+}
+
+.info-number-fall {
+    height: 12pt;
+    width: 45px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: rgb(164, 0, 0);
+    border: 1px solid rgb(212, 0, 0);
+    background-color: rgb(59, 9, 9);
+}
+
+.info-card-taxa h4 {
+    font-size: 20pt;
+    color: #fff;
+}
+
+.info-card-taxa {
+    width: 57px;
+}
+
+.info-card-taxa p {
+    font-size: 10pt;
+    line-height: 1rem;
+    opacity: 85%;
+    width: 120px;
 }
