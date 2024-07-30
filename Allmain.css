@@ -83,6 +83,14 @@ main p {
     border-radius: 12px;   
 }
 
+.info-card {
+    margin-left: 10.5px;
+}
+
+.info-card-taxa {
+    margin-left: 10.5px;
+}
+
 .info-card h4 {
     font-size: 20pt;
     color: #fff;
@@ -123,6 +131,7 @@ main p {
     height: 12pt;
     width: 45px;
     margin-top: 15px;
+    margin-left: 10.5px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -145,6 +154,7 @@ main p {
     height: 12pt;
     width: 45px;
     margin-top: 15px;
+    margin-left: 10.5px;
     display: flex;
     flex-direction: row;
     justify-content: center;
