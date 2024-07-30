@@ -57,3 +57,82 @@ event.preventDefault();
 }
 
 menuItem.addEventListener("click", nonee);
+
+var options = {
+    chart: {
+      type: 'bar',
+    },
+    series: [{
+        data: [{
+          x: 'Jan',
+          y: 12,
+         }, 
+        {
+          x: 'Fev',
+          y: 24,
+          fillColor: '#2accff'
+        }, {
+          x: 'Mar',
+          y: 34,
+        },
+        {
+        x: 'Abr',
+        y: 44,
+        fillColor: '#2accff'
+        },
+        {
+          x: 'Mai',
+          y: 54,
+        },
+        {
+           x: 'Jun',
+           y: 64,
+           fillColor: '#2accff'
+        },
+        {
+           x: 'Jul',
+           y: 74,
+        },
+          {
+          x: 'Ago',
+          y: 84,
+          fillColor: '#2accff'
+        },
+          {
+            x: 'Set',
+            y: 74,
+        },
+        {
+          x: 'Out',
+          y: 54,
+          fillColor: '#2accff'
+          },
+        {
+            x: 'Nov',
+            y: 64,
+        },
+        {
+          x: 'Dec',
+          y: 94,
+          fillColor: '#2accff'
+          },
+        ],
+      }],
+      plotOptions: {
+        bar: {
+          columnWidth: '45%',
+          borderRadius: 16,
+        }
+      },
+      dataLabels: {
+        enabled: false
+      },
+      legend: {
+        show: false
+      },
+    }
+    
+  
+  var chart = new ApexCharts(document.querySelector("#chart-container"), options);
+  
+  chart.render();
