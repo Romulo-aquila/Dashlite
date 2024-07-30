@@ -11,6 +11,8 @@ function nonee(event) {
     let Categoria = document.getElementById('Category');
     let HR001 = document.getElementById('division-hr');
 
+    const container = document.getElementById('Container');
+
 
     if (Perfil[0].style.display == "flex") {
         Perfil[0].style.display = "none";
@@ -23,6 +25,9 @@ function nonee(event) {
 
         Titlemenu01.style.display = "none";
         AsideBar[0].style.width = "8.7%";
+        AsideBar[0].style.right = "194vh";
+        AsideBar[0].style.padding = "0 0px";
+        container.style.marginLeft = "16vh";
 
         itemsNav[0].style.justifyContent = "center";
         logo[0].style.display = "none";
@@ -37,7 +42,11 @@ function nonee(event) {
 
 
         Titlemenu01.style.display = "block";
-        AsideBar[0].style.width = "27%";
+        AsideBar[0].style.width = "25%";
+        AsideBar[0].style.right = "160vh";
+        AsideBar[0].style.padding = "0 16px";
+        container.style.marginLeft = "50vh";
+        
         itemsNav[0].style.justifyContent = "space-between";
         logo[0].style.display = "block";
         Categoria.style.display = "flex";
