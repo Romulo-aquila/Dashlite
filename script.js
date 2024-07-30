@@ -63,6 +63,7 @@ var options = {
       type: 'bar',
     },
     series: [{
+      name: 'Vendas',
         data: [{
           x: 'Jan',
           y: 12,
