@@ -25,8 +25,8 @@ main p {
 }
 
 .calendar {
-    width: 15%;
-    height: 64px;
+    width: 16%;
+    height: 60px;
     background-color: #141a29;
     position: relative;
     color: #fff;
@@ -53,7 +53,10 @@ main p {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
+    margin-top: 2.6rem;
+    gap: 2.5px;
 }
 
 .card-single {
@@ -62,12 +65,10 @@ main p {
     justify-content: center;
     align-items: center;
     height: 79px;
-    padding: 0 7.5%;
-    margin-top: 1%;
-    margin-left: 1.5%;
+    width: 32%;
+    margin-top: 1.7%;
     background-color: #141a29;
     border-radius: 12px;
-    gap: 5.5px;
 }
 
 .card-single-taxa {
@@ -76,12 +77,10 @@ main p {
     justify-content: center;
     align-items: center;
     height: 79px;
-    padding: 0 7.8%;
-    margin-top: 1%;
-    margin-left: 1.4%;
+    width: 32%;
+    margin-top: 1.7%;
     background-color: #141a29;
-    border-radius: 12px;
-    gap: 5.5px;
+    border-radius: 12px;   
 }
 
 .info-card h4 {
