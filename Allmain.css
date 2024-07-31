@@ -5,12 +5,13 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 128px;
 }
 
 main {
     display: flex;
     flex-direction: column-reverse;
-    margin: 28px 40px;
+    margin: 10px 40px 26px 40px;
 }
 
 main h3 {
@@ -24,8 +25,16 @@ main p {
     font-size: 16px;
 }
 
+.calendar-menu {
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .calendar {
-    width: 16%;
+    width: 12%;
     height: 60px;
     background-color: #141a29;
     position: relative;
@@ -36,6 +45,43 @@ main p {
     justify-content: center;
     align-items: center;
     gap: 5px;
+    position: absolute;
+    right: 40px;
+}
+
+.calendar:hover + .menu-calendar {
+    display: inline-block;
+}
+
+.menu-calendar:hover {
+    display: inline-block;
+}
+
+.menu-calendar {
+    position: relative;
+    width: 162.4px;
+    justify-content: center;
+    display: none;
+    transition: all 0.1s;
+    text-align: center;
+    height: auto;
+    border-radius: 0 0 12px 12px;
+    padding: 16px 5px;
+    background-color: #2c2c2c;
+    right: 0px;
+    top: 100px;
+}
+
+.menu-calendar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-calendar ul li {
+    list-style: none;
+    font-family: "Josefin Sans", sans-serif;
+    line-height: 275%;
+    font-size: 13.5px;
 }
 
 .calendar p {
@@ -55,7 +101,7 @@ main p {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2.6rem;
+    margin-top: 0.5rem;
     gap: 2.5px;
 }
 
