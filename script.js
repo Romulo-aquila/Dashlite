@@ -25,7 +25,7 @@ function nonee(event) {
 
         Titlemenu01.style.display = "none";
         AsideBar[0].style.width = "8.7%";
-        AsideBar[0].style.right = "194vh";
+        AsideBar[0].style.right = "91.5%";
         AsideBar[0].style.padding = "0 0px";
         container.style.marginLeft = "16vh";
 
@@ -43,7 +43,7 @@ function nonee(event) {
 
         Titlemenu01.style.display = "block";
         AsideBar[0].style.width = "25%";
-        AsideBar[0].style.right = "160vh";
+        AsideBar[0].style.right = "75.8%";
         AsideBar[0].style.padding = "0 16px";
         container.style.marginLeft = "50vh";
         
@@ -60,6 +60,8 @@ menuItem.addEventListener("click", nonee);
 
 var options = {
     chart: {
+      width: 850,
+      height: 420,
       type: 'bar',
     },
     series: [{
@@ -121,8 +123,8 @@ var options = {
       }],
       plotOptions: {
         bar: {
-          columnWidth: '45%',
-          borderRadius: 16,
+          columnWidth: '35%',
+          borderRadius: 12,
         }
       },
       dataLabels: {

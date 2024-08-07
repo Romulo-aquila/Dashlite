@@ -153,7 +153,7 @@ header {
     height: 100vh;
     overflow-y: scroll;
     position: fixed;
-    right: 160vh;
+    right: 75.8%;
     padding: 0 16px;
     width: 25%;
     background-color: #141a29;
@@ -330,4 +330,3 @@ header {
 .cor02 {
     background-color: crimson;
 }
-
