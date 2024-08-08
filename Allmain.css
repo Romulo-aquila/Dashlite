@@ -330,3 +330,47 @@ main p {
     margin-top: 1.5rem;
     color: #000;
 }
+
+.container-mais-dados {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    margin: 18px 0;
+    color: #fff;
+    gap: 18px;
+    width: 100%;
+}
+
+.taxa-de-repeat {
+    width: 50%;
+    height: 270px;
+    padding-top: 1.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #141a29;
+    border-radius: 12px;
+    border: 1px solid #2c2c2c;
+}
+
+.User_dispositivos {
+    width: 70%;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #141a29;
+    border-radius: 12px;
+    border: 1px solid #2c2c2c;
+}
+
+#circle_Chart {
+    float: left;
+    color: white;
+}
+
+.devices-container {
+    width: 45%;
+}

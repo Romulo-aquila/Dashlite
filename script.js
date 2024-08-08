@@ -139,3 +139,82 @@ var options = {
   var chart = new ApexCharts(document.querySelector("#chart-container"), options);
   
   chart.render();
+
+
+
+  var options01 = {
+    chart: {
+      height: 310,
+      width: 310,
+      type: "radialBar",
+    },
+    series: [74.2],
+    colors: ["#148dea"],
+    plotOptions: {
+      radialBar: {
+        hollow: {
+          margin: 16,
+          size: "65%"
+        },
+        startAngle: -135,
+        endAngle: 135,
+        track: {
+          background: '#333',
+          startAngle: -135,
+          endAngle: 135,
+        },
+        dataLabels: {
+          name: {
+            fontSize: "10.5px",
+            color: "#888",
+            show: true,
+          },
+          value: {
+            fontSize: "30px",
+            fontWeight: "bold",
+            color: "#fff",
+            show: true
+          }
+        }
+      }
+    },
+    fill: {
+      type: "gradient",
+      gradient: {
+        shade: "dark",
+        type: "horizontal",
+        gradientToColors: ["#2accff"],
+        stops: [0, 100]
+      }
+    },
+    stroke: {
+      lineCap: "butt"
+    },
+    labels: ["TAXA DE REPETIÇÃO"],
+  };
+  
+  new ApexCharts(document.querySelector("#circle_Chart"), options01).render();
+
+const devices = document.getElementById('devices_Chart');
+
+  new Chart(devices, {
+    type: 'pie',
+    data: { 
+      labels: [
+      'Desktop',
+      'Mobile',
+      'Tab'
+    ],
+    datasets: [{
+      label: 'Acessos',
+      data: [72, 44, 16],
+      backgroundColor: [
+        '#3434b5',
+        '#26b1df',
+        'rgb(159, 5, 159)'
+      ],
+      borderColor: "#141a29" ,
+      hoverOffset: 4,
+      }]
+    }
+  });
