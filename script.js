@@ -225,3 +225,92 @@ var options = {
 
   var chart = new ApexCharts(document.querySelector("#devices_Chart"), options);
   chart.render();
+
+
+  var options = {
+    chart: {
+      // width: 550,
+      // height: 420,
+      
+    },
+    series: [
+    {
+      name: 'Usuários',
+      data: [
+        {
+          x: '8hrs',
+          y: 64,
+        },
+        {
+          x: '12hrs',
+          y: 174,
+        },
+        {
+          x: '16hrs',
+          y: 142,
+        },
+        {
+          x: '20hrs',
+          y: 75,
+        },
+        {
+          x: '23hrs',
+          y: 16,
+        },
+      ]
+    }
+  ],
+    chart: {
+    height: 180,
+    width: 450,
+    type: 'bar'
+  },
+  plotOptions: {
+    bar: {
+      columnWidth: '50%'
+    }
+  },
+  colors: ['#1796ed'],
+  dataLabels: {
+    enabled: false
+  },
+  legend: {
+    show: false,
+    showForSingleSeries: true,
+    markers: {
+      fillColors: ['#00E396', '#775DD0']
+    }
+  }
+  };
+
+  var chart = new ApexCharts(document.querySelector("#Time-chart"), options);
+  chart.render();
+
+  
+      
+  var options = {
+    series: [{
+    name: 'Usuários',
+    data: [ 416, 200,]
+  }],
+    chart: {
+    type: 'bar',
+    height: 175
+  },
+  plotOptions: {
+    bar: {
+      borderRadius: 4,
+      borderRadiusApplication: 'end',
+      horizontal: true,
+    }
+  },
+  dataLabels: {
+    enabled: false
+  },
+  xaxis: {
+    categories: ['R', 'N'],
+  }
+  };
+
+  var chart = new ApexCharts(document.querySelector("#new-returning"), options);
+  chart.render();
