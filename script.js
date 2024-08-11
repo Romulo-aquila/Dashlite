@@ -195,26 +195,33 @@ var options = {
   
   new ApexCharts(document.querySelector("#circle_Chart"), options01).render();
 
-const devices = document.getElementById('devices_Chart');
 
-  new Chart(devices, {
+   
+  var options = {
+    series: [64, 52, 14, 4],
+    chart: {
+    width: 380,
     type: 'pie',
-    data: { 
-      labels: [
-      'Desktop',
-      'Mobile',
-      'Tab'
-    ],
-    datasets: [{
-      label: 'Acessos',
-      data: [72, 44, 16],
-      backgroundColor: [
-        '#3434b5',
-        '#26b1df',
-        'rgb(159, 5, 159)'
-      ],
-      borderColor: "#141a29" ,
-      hoverOffset: 4,
-      }]
+  },
+  theme: {
+    monochrome: {
+      enabled: true,
+      color: '#037ddb',
     }
-  });
+  },
+  labels: ['desktop', 'mobile', 'tab', 'outros'],
+  responsive: [{
+    breakpoint: 480,
+    options: {
+      chart: {
+        width: 200
+      },
+      legend: {
+        position: 'bottom'
+      },
+    }
+  }]
+  };
+
+  var chart = new ApexCharts(document.querySelector("#devices_Chart"), options);
+  chart.render();
