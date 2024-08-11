@@ -385,7 +385,7 @@ main p {
 #Time-and-Retorn {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 95%;
     height: 524px;
     margin-left: 16px;
 }
@@ -403,7 +403,7 @@ main p {
 
 .Horas-por-dia {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     height: 254px;
     width: 100%;
     margin-bottom: 12.5px;
@@ -412,10 +412,24 @@ main p {
 
 .Novo-Retornado {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     height: 254px;
     width: 100%;
+    padding: 0.5px 1.4rem;
+    border-radius: 12px;
+    border: 1px solid #2c2c2c;
     background-color: #141a29;
+}
+
+.Novo-Retornado h4 {
+    color: #fff;
+    font-size: 14.5pt;
+    opacity: 95%;
+} 
+
+.Novo-Retornado hr {
+    margin: 5px 0;
+    opacity: 45%;
 }
 
 .products-header {
@@ -440,6 +454,7 @@ main p {
 
 .products-header a:hover {
     text-decoration: underline;
+    opacity: 70%;
 }
 
 .Products-container hr {
@@ -467,4 +482,38 @@ main p {
 .produto-content img {
     border-radius: 4.5px;
 }
+
+#Grafico-Time {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Horas-por-dia {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 100%;
+    padding: 18.5px 1.4rem;
+    border-radius: 12px;
+    border: 1px solid #2c2c2c;
+    background-color: #141a29;
+}
+
+.Horas-por-dia hr {
+    margin: 8.5px 0;
+    opacity: 50%;
+}
+
+.Time-header h4{
+    color: #fff;
+    font-size: 14.5pt;
+    opacity: 95%;
+}
+
+.Novo-Header {
+    padding: 16.5px 0 0 0;
+}
+
 
